@@ -1,2 +1,4 @@
 gunicorn==19.4.5
 virtualenv==15.0.1
+Flask>=0.8
+twilio>=3.3.6
