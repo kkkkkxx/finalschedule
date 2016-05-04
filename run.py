@@ -582,7 +582,7 @@ def hello_monkey():
     if message_body in finals:
         fullfinal = finals[message_body][0].split() + ""
         for item in fullfinal[1:fullfinal.length-8]:
-            classname += item + " "
+            classname = classname + item + " "
         newclassname = classname + ""
         classprofessor = fullfinal[fullfinal.length-9] + ""
         classweekday = fullfinal[fullfinal.length-4] + ""
