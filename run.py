@@ -578,13 +578,11 @@ def hello_monkey():
     """Respond and greet the caller by name."""
 
     message_body = request.values.get('Body', None)
+    classname = ""
     if message_body in finals:
-        classname = ""
         fullfinal = finals[message_body][0].split() + ""
-        for item in fullfinal[1:fullfinal.length-8]
-        {
+        for item in fullfinal[1:fullfinal.length-8]:
             classname += item + " "
-        }
         newclassname = classname + ""
         classprofessor = fullfinal[fullfinal.length-9] + ""
         classweekday = fullfinal[fullfinal.length-4] + ""
