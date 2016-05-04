@@ -66,9 +66,10 @@ def hello_monkey():
 
     message_body = request.values.get('Body', None)
     if message_body in finals:
-        message = "Your final for %s, taught by Professor %s, is on %s, %s, from %s to %s, in %s" % (finals[message_body][1], finals[message_body][2], finals[message_body][5], finals[message_body][6], finals[message_body][3], finals[message_body][4], finals[message_body][7])
+        #message = "Your final for %s, taught by Professor %s, is on %s, %s, from %s to %s, in %s" % (finals[message_body][1], finals[message_body][2], finals[message_body][5], finals[message_body][6], finals[message_body][3], finals[message_body][4], finals[message_body][7])
+        message = finals[message_body][0] + ""
     else:
-        message = "Please make sure you have the correct format! Text [Dept. Code] [Class Number] [Section Number]. For example, 'CMSC 11000 1'. You can find your section number at http://classes.uchicago.edu. If you are sure you are texting your class correctly, your department may not be listed on the final exam schedule yet."
+        message = "Please make sure you have the correct format ([Dept. Code] [Class Number] [Section Number])! For example, send 'CMSC 11000 1'. You can find the section number for your classes at http://classes.uchicago.edu. If you are sure you are texting your class correctly, your department may not be listed on the final exam schedule yet."
 
     resp = twilio.twiml.Response()
     resp.message(message)
