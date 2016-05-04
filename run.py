@@ -580,7 +580,7 @@ def hello_monkey():
     message_body = request.values.get('Body', None)
     classname = ""
     if message_body in finals:
-        fullfinal = finals[message_body][0].split() + ""
+        fullfinal = finals[message_body][0].split()
         for item in fullfinal[1:fullfinal.length-8]:
             classname = classname + item + " "
         newclassname = classname + ""
