@@ -581,19 +581,19 @@ def hello_monkey():
     classname = ""
     if message_body in finals:
         fullfinal = finals[message_body][0].split()
-        for item in fullfinal[1:fullfinal.length-8]:
+        for item in fullfinal[1:len(fullfinal)-9]:
             classname = classname + item + " "
         newclassname = classname + ""
-        classprofessor = fullfinal[fullfinal.length-9] + ""
-        classweekday = fullfinal[fullfinal.length-4] + ""
-        classdate = fullfinal[fullfinal.length-3] + ""
-        finalbegin = fullfinal[fullfinal.length-8] + " " + fullfinal[fullfinal.length-7] + ""
-        finalend = fullfinal[fullfinal.length-6] + " " + fullfinal[fullfinal.length-5] + ""
-        finalroom = fullfinal[fullfinal.length-2] + " " + fullfinal[fullfinal.length-1] + ""
+        classprofessor = fullfinal[len(fullfinal)-9] + ""
+        classweekday = fullfinal[len(fullfinal)-4] + ""
+        classdate = fullfinal[len(fullfinal)-3] + ""
+        finalbegin = fullfinal[len(fullfinal)-8] + " " + fullfinal[len(fullfinal)-7] + ""
+        finalend = fullfinal[len(fullfinal)-6] + " " + fullfinal[len(fullfinal)-5] + ""
+        finalroom = fullfinal[len(fullfinal)-2] + " " + fullfinal[len(fullfinal)-1] + ""
         yourfinal = "Class Name: " + newclassname + "\nProfessor: " + classprofessor + "\nDate: " + classweekday + ", " + classdate + "\n" + "Location: " + finalroom + "\nTime: " + finalbegin + " - " + finalend + ""
         message = yourfinal
     else:
-        message = "Class not found!\nMake sure you have the correct format of [Dept. Code] [Class Code] [Section Number].\nNote: you can find what section of a class is yours by going to http://classes.uchicago.edu.\nLastly, if you are sure you are sending the correct class, your class is not listed on the school's final exam schedule (you may have a seperate department exam schedule)."
+        message = "Class not found!\nMake sure you have the correct format of [Dept. Code] [Class Code] [Section Number].\nNote: You can find what section of a class is yours by going to http://classes.uchicago.edu.\nLastly, if you are sure you are sending the correct class, your class is not listed on the school's final exam schedule (you may have a seperate department exam schedule)."
 
     resp = twilio.twiml.Response()
     resp.message(message)
