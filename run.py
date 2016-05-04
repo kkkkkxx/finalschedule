@@ -243,7 +243,7 @@ finals = {
     "FREN 20500 1": ["LEC Ecrire En Francais Berg 8:00 AM 10:00 AM R 6/9/2016 C 302"],
     "FREN 20500 2": ["LEC Ecrire En Francais Gao 8:00 AM 10:00 AM R 6/9/2016 C 302"],
     "FREN 20601 1": ["LEC Expression orale et phonetique Berg 10:30 AM 12:30 PM W 6/8/2016 C 302"],
-    "FREN 21810 1": ["CRS Introduction à la littérature française du XVIIIe siècle Morrissey 10:30 AM 12:30 PM M 6/6/2016 C 103"],
+    "FREN 21810 1": ["CRS Introduction a la litterature francaise du XVIIIe siecle Morrissey 10:30 AM 12:30 PM M 6/6/2016 C 103"],
     "GEOG 28600 1": ["SEM Advanced GIS Analysis Schuble 4:00 PM 6:00 PM W 6/8/2016 BSLC 018"],
     "GEOS 13300 1": ["LEC The Atmosphere Abbot 1:30 PM 3:30 PM F 6/10/2016"],
     "GEOS 21100 1": ["LEC Introduction to Petrology Dauphas 10:30 AM 12:30 PM M 6/6/2016 HGS 313"],
