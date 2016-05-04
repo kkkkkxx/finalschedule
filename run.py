@@ -1,15 +1,10 @@
-from flask import Flask, request, redirect
-import twilio.twiml
+# Download the twilio-python library from http://twilio.com/docs/libraries
+from twilio.rest import TwilioRestClient
 
-app = Flask(__name__)
+# Find these values at https://twilio.com/user/account
+account_sid = "ACXXXXXXXXXXXXXXXXX"
+auth_token = "YYYYYYYYYYYYYYYYYY"
+client = TwilioRestClient(account_sid, auth_token)
 
-@app.route("/", methods=['GET', 'POST'])
-def hello_monkey():
-    """Respond to incoming calls with a simple text message."""
-
-    resp = twilio.twiml.Response()
-    resp.message("Hello, Mobile Monkey")
-    return str(resp)
-
-if __name__ == "__main__":
-    app.run(debug=True)
+message = client.messages.create(to="+12316851234", from_="+15555555555",
+                                     body="Hello there!")
