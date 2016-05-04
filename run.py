@@ -69,26 +69,11 @@ def hello_monkey():
         classname = finals[message_body][1] + ""
         classprofessor = finals[message_body][2] + ""
         classweekday = finals[message_body][5] + ""
-        if classweekday == "M" {
-            theweekday = "Monday"
-        }
-        if classweekday == "T" {
-            theweekday = "Tuesday"
-        }
-        if classweekday == "W" {
-            theweekday = "Wednesday"
-        }
-        if classweekday == "R" {
-            theweekday = "Thursday"
-        }
-        if classweekday == "F" {
-            theweekday = "Friday"
-        }
         classdate = finals[message_body][6] + ""
         finalbegin = finals[message_body][3] + ""
         finalend = finals[message_body][4] + ""
         finalroom = finals[message_body][7] + ""
-        yourfinal = "Class Name: " + classname + "\nProfessor: " + classprofessor + "\nDate: " + theweekday + ", " + classdate + "\n" + "Location: " + finalroom + "\nTime: " + finalbegin + " - " + finalend + ""
+        yourfinal = "Class Name: " + classname + "\nProfessor: " + classprofessor + "\nDate: " + classweekday + ", " + classdate + "\n" + "Location: " + finalroom + "\nTime: " + finalbegin + " - " + finalend + ""
         message = yourfinal
     else:
         message = "Please make sure you have the correct format ([Dept. Code] [Class Number] [Section Number])! For example, send 'CMSC 11000 1'. You can find the section number for your classes at http://classes.uchicago.edu. If you are sure you are texting your class correctly, your department may not be listed on the final exam schedule yet."
