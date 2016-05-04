@@ -1,2 +1,1 @@
-This is a little thing I whipped up that uses the Twilio API to allow University of Chicago students to text their classes
-to a number and have it text them back the location, date, and time of that final.
+This is a little thing I whipped up that uses the Twilio API to allow University of Chicago students to text their classes to a number and have it text them back the location, date, and time of that final.
